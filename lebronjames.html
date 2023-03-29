@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title> LeBron James </title>
+<link rel= "stylesheet" type="text/css" href="style.css">
+<style>
+.accordion {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 80%;
+			margin: 0 auto;
+		}
+		.accordion-item {
+			width: 100%;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+		}
+		.accordion-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
+			cursor: pointer;
+		}
+		.accordion-header h2 {
+			margin: 0;
+		}
+		.accordion-content {
+			display: none;
+			padding: 10px;
+		}
+		.accordion-item.active .accordion-content {
+			display: block;
+        }
+</style>
+
+</head>
+<body>
+<div> 
+<div style="text-align: center;">
+<header><h1 style="text-align: center;">LeBron James</h1>
+<p style="text-align: center;"> The greatest player of his generation.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LeBron_James_-_51959723161_%28cropped%29.jpg/800px-LeBron_James_-_51959723161_%28cropped%29.jpg" width="200" height="300">
+</div>
+<header>
+<div style="text-align: center;">
+    <div class="accordion">
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2>Accolades</h2>
+            <span>+</span>
+        </div>
+        <div class="accordion-content">
+            <p> 4x NBA Champion(2012, 2013, 2016, 2020)</p>
+            <p> 4x NBA Finals MVP(2012, 2013, 2016, 2020)</p>
+            <p> 4x NBA Most Valuable Player(2009, 2010, 2012, 2013)</p>
+            <p> 19× NBA All-Star (2005–2023)</p>
+            <p> 3× NBA All-Star Game MVP (2006, 2008, 2018)</p>
+            <p> 13× All-NBA First Team (2006, 2008–2018, 2020)</p>
+            <p> 3× All-NBA Second Team (2005, 2007, 2021)</p>
+            <p> 2× All-NBA Third Team (2019, 2022)</p>
+            <p> 5× NBA All-Defensive First Team (2009–2013)</p>
+            <p> NBA All-Defensive Second Team (2014)</p>
+            <p> NBA Rookie of the Year (2004)</p>
+            </div>
+            </div>
+        <header>
+        <p> American professional basketball player LeBron Raymone James Sr. plays for the Los Angeles Lakers in the National Basketball Association. (NBA). He is known as "King James" and is frequently compared to Michael Jordan in discussions about the greatest basketball player of all time. James is regarded as one of the all-time greats in the sport. James rates fourth in career assists and is the all-time top scorer in the NBA. He has participated in 10 NBA Finals and earned four NBA championships—two with the Miami Heat, one with the Los Angeles Lakers, and one with the Cleveland Cavaliers. He has two Olympic gold medals, four MVP trophies, and four Finals MVP awards. </p>
+        <p> LeBron James was the #1 player in the nation as a high schooler playing for St Vincent-St Mary High School in Akron, Ohio, and was drafted #1 overall in the 2003 NBA Draft by the Cleveland Cavaliers, he is apart of arguably the greatest NBA draft class(Other than 1984) of all-time.</p>
+        <p> 13 years later, he took the Cavaliers, single-handedly to the NBA Championship for the first time in franchise history off the back of the greatest ever NBA Finals Comeback of all-time.</p>
+      
+        <div style="text-align: center;">
+            <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2>Score</h2>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p> He led the league in scoring 1 time out of 19 seasons.</p>
+                    <p> LeBron is 2nd in Points Per Game(27.2 ppg) | 40 points.</p>
+                    <p> LeBron is 3rd in the league in Player Efficiency Rating(27.2 per) | 40 points</p>
+                    <p> LeBron is 3rd for Most NBA Championships with 4| 40 points</p>
+                    <p> LeBron is 3rd in the amount of MVPs behind Jordan with 4 | 30 points</p>
+                    <p> LeBron is 2nd in Finals MVPS with 4 | 40 points</p>
+                    <p> LeBron is 2nd in GameScore with 53.2 GmsC | 40 points</p>
+                    <p> LeBron is tied with Kareem for All-Defensive First Teams with 5 | 35 points</p>
+                    <p> LeBron leads the league in All-NBA First Teams with 13 | 50 points</p>
+                    <p> LeBron has 315 points in the GOAT Debate.</p>
+                </header>
+                </div>
+                </div>
+            
+            <header>
+                <table>
+                    <tr>
+                      <th>G</th>
+                      <th>PTS</th>
+                      <th>TRB</th>
+                      <th>AST</th>
+                      <th>FG%</th>
+                      <th>FG3%</th>
+                      <th>FT%</th>
+                      <th>eFG%</th>
+                      <th>PER</th>
+                      <th>WS</th>
+                    </tr>
+                    <tr>
+                      <td>1414</td>
+                      <td>27.2</td>
+                      <td>7.5</td>
+                      <td>7.3</td>
+                      <td>.505</td>
+                      <td>.344</td>
+                      <td>.735</td>
+                      <td>.545</td>
+                      <td>27.2</td>
+                      <td>254.6</td>
+                    </tr>
+                  </table>  
+            </header>
+
+            <p><a href="index.html"> Back to main page</a></p>
+            <p><a href="michaeljordan.html"> Michael Jordan</a></p>
+            <p><a href="kabduljabbar.html"> Kareem Abdul-Jabbar</a></p>
+
+
+
+            <script>
+                const accordionHeaders = document.querySelectorAll('.accordion-header');
+        
+                accordionHeaders.forEach(header => {
+                    header.addEventListener('click', () => {
+                        const accordionItem = header.parentElement;
+                        accordionItem.classList.toggle('active');
+                        const accordionContent = accordionItem.querySelector('.accordion-content');
+                        if (accordionItem.classList.contains('active')) {
+                            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                            header.querySelector('span').textContent = '-';
+                        } else {
+                            accordionContent.style.maxHeight = 0;
+                            header.querySelector('span').textContent = '+';
+                        }
+                    });
+                });
+            </script>
+        
+</body>
+</html>
